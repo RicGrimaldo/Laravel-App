@@ -19,12 +19,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\ProfilesController::class, 'index'])->name('home');
+Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\ProfilesController::class, 'index'])->name('home');
+Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\ProfilesController::class, 'index'])->name('home');
+Route::get('/profile/{user}', [App\Http\Controllers\ProfilesController::class, 'index'])->name('profile.show');
