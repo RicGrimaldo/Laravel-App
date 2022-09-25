@@ -15,7 +15,17 @@ return new class extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
+            
+            //  Foreign key
+            $table->unsignedBigInteger('user_id');
+
+            //  Nulleable means it isn't required
+            $table->string('title')->nullable();
+            $table->text('description')->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
+
+            $table->index('user_id');
         });
     }
 
