@@ -7,7 +7,10 @@
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="rounded-circle" style="height: 100px;">
         </div>
         <div clas="col-9 pt-5">
-            <div><h1 class="text-start">{{ $user->username }}</h1></div>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <h1 class="text-start">{{ $user->username }}</h1>
+                <a href="#">Add new post</a>
+            </div>
             <div class="d-flex">
                 <div class="pe-5"><strong>153</strong> posts</div>
                 <div class="pe-5"><strong>2.5</strong> followers</div>
