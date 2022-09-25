@@ -13,9 +13,9 @@
                 <div class="pe-5"><strong>2.5</strong> followers</div>
                 <div class="pe-5"><strong>212</strong> following</div>
             </div>
-            <div class="pt-4 fw-bold text-start">freeCodeCamp.org</div>
-            <div class="text-start">We're a global community of millions of people learning to code together. LearnToCodeRPG: https://www.freecodecamp.org/news/learn-to-code-rpg/</div>
-            <div class="text-start"><a href="#">www.freecodecamp.org</a></div>
+            <div class="pt-4 fw-bold text-start">{{ $user->profile->title }}</div>
+            <div class="text-start">{{ $user->profile->description }}</div>
+            <div class="text-start"><a href="#">{{ $user->profile->url }}</a></div>
         </div>
     </div>
 
