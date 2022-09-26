@@ -9,7 +9,7 @@
         <div clas="col-9 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1 class="text-start">{{ $user->username }}</h1>
-                <a href="#">Add new post</a>
+                <a href="/p/create">Add new post</a>
             </div>
             <div class="d-flex">
                 <div class="pe-5"><strong>153</strong> posts</div>
@@ -23,15 +23,11 @@
     </div>
 
     <div class="row pt-5">
-        <div class="col-4">
-            <img src="https://www.vipinajayakumar.com/post/getting_started_with_javascript/git.png" alt="" class="w-100">
-        </div>
-        <div class="col-4">
-            <img src="https://plugins.jetbrains.com/files/17756/205959/icon/pluginIcon.png" alt="" class="w-100">
-        </div>
-        <div class="col-4">
-            <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/19/2c/c1/192cc1e5-3696-dba8-19e7-4c43bf562c14/AppIcon-85-220-4-2x.png/1200x630bb.png" alt="" class="w-100">
-        </div>
+        @foreach($user->posts as $post)
+            <div class="col-4">
+                <img src="/storage/{{ $post->image }}" alt="" class="w-100">
+            </div>
+        @endforeach
     </div>
 
 
