@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+    //  Login is necessary
+    public function __construct(){
+        $this->middleware('auth');
+    }
     public function create(){
         return view('posts.create');
     }
@@ -15,6 +19,8 @@ class PostsController extends Controller
             'caption' => 'required',
             'image' => ['required','image']
         ]);
+
+        auth()->user()->posts()->create($data);
 
         \App\Models\Post::create($data);
 
