@@ -37,10 +37,8 @@
             <input type="file" class="form-control-file" id="image" name="image">
 
             @error('image')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
+                <strong>{{ $message }}</strong>
+            @enderror
         </div>
 
         <div class="row pt-4 offset-2">
