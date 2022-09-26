@@ -15,6 +15,9 @@ class PostsController extends Controller
             'caption' => 'required',
             'image' => ['required','image']
         ]);
+
+        \App\Models\Post::create($data);
+
         dd(request()->all());
     }
 }
