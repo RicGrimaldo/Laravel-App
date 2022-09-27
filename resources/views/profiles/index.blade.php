@@ -9,8 +9,9 @@
         <div clas="col-9 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1 class="text-start">{{ $user->username }}</h1>
-                <a href="/p/create">Add new post</a>
+                <a href="/p/create" >Add new post</a>    
             </div>
+            <a href="/profile/{{ $user->id }}/edit">Edit profile</a>
             <div class="d-flex">
                 <div class="pe-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
                 <div class="pe-5"><strong>2.5</strong> followers</div>
