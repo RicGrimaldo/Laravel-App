@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-sm text-center pt-4">
+<div class="container text-center pt-4">
     <div class="row row-cols-2">
-        <div clas="col-3 p-5">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="rounded-circle" style="height: 100px;">
+        <div class="col-3 p-5">
+            <img src="/storage/{{ $user->profile->image }}" class="rounded-circle w-100">
         </div>
         <div clas="col-9 pt-5">
             <div class="d-flex justify-content-between align-items-baseline">
