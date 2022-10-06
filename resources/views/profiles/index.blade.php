@@ -10,7 +10,7 @@
             <div class="d-flex justify-content-between align-items-baseline">
                 <div class="d-flex pb-4 align-items-center">
                     <h3 class="text-start">{{ $user->username }}</h3>
-                    <button class="btn btn-primary ms-4" id="btn">Follow</button> 
+                    <follow-button />
                 </div>
 
                 @can('update',$user->profile)
@@ -43,7 +43,5 @@
             </div>
         @endforeach
     </div>
-
-
 </div>
 @endsection
