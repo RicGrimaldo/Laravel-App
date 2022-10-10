@@ -10,7 +10,10 @@
 
         methods: {
             followUser(){
-                // Action
+                axios.post('/follow/1')
+                    .then(response => {
+                        alert(response.data);
+                    });
             }
         }
     }
