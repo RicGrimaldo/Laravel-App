@@ -18,7 +18,7 @@ class PostsController extends Controller
 
         //  To get all the posts that we need in chronological order
 
-        $posts = Post::whereIn('user_id', $users)->latest()->paginate(5);
+        $posts = Post::whereIn('user_id', $users)->with('user')->latest()->paginate(5);
 
         return view('posts.index', compact('posts'));
     }
