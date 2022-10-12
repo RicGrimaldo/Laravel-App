@@ -2,7 +2,9 @@
 
 ## Laravel Application Example
 
-Web application example of an Instagram clone using the Laravel framework.
+Web application example of an Instagram clone using the Laravel Framework 9.31.0.
 
 - [Laravel documentation](https://laravel.com/docs/9.x).
 - [Tutorial video of _freeCodeCamp.org_](https://youtu.be/ImtZ5yENzgE).
+
+**Note**: It will be necessary to have created the `laravel_db` database schema before.
